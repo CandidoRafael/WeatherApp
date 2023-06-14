@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
+}
+
+/* Styles Container */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(/img/weather-effects-composition.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #cfcfcf;
+    box-shadow: rgba(0,0,0, 0.7) 0px 3px 8px;
+    padding: 2em;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Styles Form */
+
+.form h2 {
+    margin-bottom: 1rem;
+    color: #497452;
+}
+
+.input-container {
+    display: flex;
+}
+
+.form input {
+    padding: .6rem;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    color: #497452;
+}
+
+.input-container button {
+    padding: .9rem;
+    min-height: 3.1rem;
+    font-size: 1.2em;
+    margin-left: 8px;
+    background-color: #497452;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .7s all;
+}
+
+.input-container button:hover {
+    transform: scale(1.07);
+}
+
+/* Error Message */
+
+
+#error-Status {
+    padding: 2em;
+    text-align: center;
+}
+
+#error-Status h2 {
+    font-size: 4em;
+    color: #497452;
+}
+
+#error-Status p {
+    font-weight: bold;
+}
+
+/* Weather */
+
+#weather-data {
+    border-top: 1px solid #497452;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+#weather-icon {
+    width: 70px;
+}
+
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+}
+
+#weather-data span {
+    margin:  0.6rem;
+}
+
+#country {
+    height: 30px;
+}
+
+#temperature {
+    font-size: 4rem;
+    color: #497452;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .6rem 0;
+}
+
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#details-container #humidity {
+    border-right: 1px solid #497452;
+    margin: .6rem;
+    padding: .6rem;
+}

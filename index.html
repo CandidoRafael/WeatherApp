@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font Awesome -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+      />
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" action="">
+            <h2>Check the weather: </h2>
+            <div class="input-container">
+                <input type="text" name="search" id="inputText" placeholder="Enter city name">
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </form>
+        <main id="weather-data" class="hide">
+            <p id="temperature">
+                <span></span>&deg;C
+            </p>
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+                <img src="" alt="Country flag" id="country">
+            </h2>
+            <section id="description-container">
+                <p id="description"></p>
+                <img 
+                src="http://openweathermap.org/img/wn/01d.png"
+                id="weather-icon" 
+                alt="">
+            </section>
+            <section id="details-container">
+                <p id="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span></span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span></span>
+                </p>
+            </section>
+        </main>
+        <div id="error-Status" class="hide">
+            <h2>404!</h2>
+            <p>we did not find this location</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
