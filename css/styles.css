@@ -13,7 +13,8 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-image: url(/img/weather-effects-composition.jpg);
+    background: rgb(67,138,131);
+    background: linear-gradient(144deg, rgba(67,138,131,1) 32%, rgba(11,84,40,1) 90%);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
